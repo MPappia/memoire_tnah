@@ -30,6 +30,7 @@
 %RAJOUTEZ ICI VOS PACKAGES
 \usepackage{tabularx}% Package pour créer des tableaux à largeur fixe avec colonnes ajustables
 \usepackage{graphicx} % Package pour inclure des images avec options avancées de redimensionnement et rotation
+\usepackage{float} % Package permettant de forcer le placement exact des flottants
 
 
 
@@ -826,22 +827,35 @@ efficace et fidèle des documents.
 	
 	Après avoir sélectionné les documents éligibles à un traitement HTR, il est temps d’appeler le moteur et les modèles afin de commencer la reconnaissance de caractères manuscrits. Mais tout d’abord, un point technique sur la définition et la différence entre modèle et moteur. 
 	\\
+	
+	Les modèles ont été évoqués précédemment dans la description de la chaîne, sans pour autant être expliqué.  Un modèle de reconnaissance de texte manuscrit est un algorithme ou un réseau de neurones, une structure computationnelle inspirée du cerveau humain, constituée de nœuds interconnectés (neurones artificiels) qui traitent et transmettent des informations. Ce modèle est spécialement conçu pour reconnaître et transcrire automatiquement du texte manuscrit à partir d’images issues de différents corpus, tels que des documents administratifs, des manuscrits médiévaux, ou des écrits en arabe et en cyrillique. Entraîné sur des données annotées, c’est-à-dire des images de texte manuscrit accompagnées de leurs transcriptions exactes (Corpus Gold), le modèle apprend à généraliser et à transcrire de nouveaux échantillons de texte manuscrit avec une grande précision.
+	
+	Un aspect important du processus est la correction des données, représentée dans le schéma, figure 3.6\footcite{pinche_images_2022},  par une boucle de rétroaction. Les erreurs détectées dans les prédictions peuvent être corrigées et réintégrées dans le Corpus Gold, permettant ainsi d’améliorer continuellement le modèle HTR.
+	\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{images/schema_htr}
+		\caption{Schéma d'un processus de reconnaissance d'écriture manuscrite.}
+		\label{fig:schemhtr}
+	\end{figure}
+	
+	Autre élément important dans le fonctionnement d’une chaîne de traitement HTR, c’est le moteur. Le moteur HTR est un système informatique conçu pour la reconnaissance et la transcription de texte manuscrit en format numérique. Ces moteurs utilisent des techniques avancées d’apprentissage automatique et de traitement d’image pour identifier et convertir les caractères manuscrits en texte exploitable. Le processus de reconnaissance de texte passe par plusieurs étapes. Tout d’abord, le retraitement des images pour améliorer la qualité du texte à reconnaître, incluant des ajustements tels que le redressement, la normalisation et la suppression du bruit. Ensuite, le texte est segmenté en lignes, mots et caractères individuels, ce qui est crucial pour isoler les éléments de texte dans l’image. La reconnaissance elle-même est effectuée à l’aide de modèles de deep learning qui analysent les segments de texte \footnote{Cf. Annexes, Figure \ref{fig:segmkrak}} pour identifier et transcrire les caractères. Après cette étape, des techniques de post-traitement sont appliquées pour corriger les erreurs et améliorer la précision du texte transcrit.
+	\\
+	
+	Il est important de distinguer les termes « moteur » et « modèle ». Le moteur fait référence à l’ensemble du système complet, incluant les algorithmes, les outils ainsi que les processus nécessaires pour la reconnaissance de caractères manuscrits. Il englobe l’ensemble des pipelines de traitement, de l’entrée à la sortie, comme illustré par la chaîne de traitement dans le schéma. Cependant, il est possible que certains moteurs comme Kraken\footnote{ https://kraken.re/main/index.html} ou PyLaia\footnote{https://github.com/jpuigcerver/PyLaia/wiki}, deux moteurs HTR open-source, intègrent plusieurs modèles de reconnaissance et des techniques spécifiques pour traiter divers types de manuscrits et d’écritures. Tandis que le modèle se réfère spécifiquement aux architectures et aux algorithmes qui sont utilisés au sein du moteur pour effectuer la reconnaissance du texte. Ces derniers sont des composants clefs du moteur.
+
+	Enfin, les “données prédites”, ou Corpus Silver, qui sont générées à la suite de la prédiction HTR, peuvent être exploitées pour diverses applications. Ces données, bien qu’elles puissent nécessiter des corrections, représentent une version numérique des textes manuscrits initialement inaccessibles et peuvent être intégrées dans d’autres systèmes pour une analyse plus approfondie ou pour enrichir des bases de données.
+	\\
+	
+	Revenons à la chaîne de traitement. Une fois les documents analysés et jugés éligibles pour le traitement HTR, ils doivent être récupérés à l'aide d'un client FTP, comme précédemment décrit pour l'OCR. Une fois les documents récupérés, le traitement est réalisé à l'aide d'une application intégrant le moteur HTR Kraken. Ce programme permet d'abord de sélectionner les documents à traiter, puis de choisir le modèle HTR approprié. 
+	\\
+	
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=0.8\textwidth]{images/app_htr_proc.png}
 		\caption{Interface graphique du processus HTR via une application développée durant le stage.}
 		\label{fig:monimage}
 	\end{figure}
-	
-	Les modèles ont été évoqués précédemment dans la description de la chaîne, sans pour autant être expliqué.  Un modèle de reconnaissance de texte manuscrit est un algorithme ou un réseau de neurones, une structure computationnelle inspirée du cerveau humain, constituée de nœuds interconnectés (neurones artificiels) qui traitent et transmettent des informations. Ce modèle est spécialement conçu pour reconnaître et transcrire automatiquement du texte manuscrit à partir d’images issues de différents corpus, tels que des documents administratifs, des manuscrits médiévaux, ou des écrits en arabe et en cyrillique. Entraîné sur des données annotées, c’est-à-dire des images de texte manuscrit accompagnées de leurs transcriptions exactes, le modèle apprend à généraliser et à transcrire de nouveaux échantillons de texte manuscrit avec une grande précision.
-	
-	Autre élément important dans le fonctionnement d’une chaîne de traitement HTR, c’est le moteur. Le moteur HTR un système informatique conçu pour la reconnaissance et la transcription de texte manuscrit en format numérique. Ces moteurs utilisent des techniques avancées d'apprentissage automatique et de traitement d'image pour identifier et convertir les caractères manuscrits en texte exploitable. Le processus de reconnaissance de texte passe par plusieurs étapes. Tout d’abord, le retraitement des images pour améliorer la qualité du texte à reconnaître, incluant donc des ajustements tels que le redressements, la normalisation et la suppression du bruit. Ensuite, le texte est segmenté en lignes, mots et caractères individuels, ce qui est crucial pour isoler les éléments de texte dans l'image. La reconnaissance elle-même est effectuée à l'aide de modèles de deep learning qui analysent les segments de texte \footnote{Cf. Annexes, Figure \ref{fig:segmkrak}} pour identifier et transcrire les caractères. Après cette étape, des techniques de post-traitement sont appliquées pour corriger les erreurs et améliorer la précision du texte transcrit. 
-	\\
-	
-	Il est important de distinguer les termes « moteur » et « modèle ». Le moteur fait référence à l’ensemble du système complet, incluant les algorithmes, les outils ainsi que les processus nécessaires pour la reconnaissance de caractères manuscrits. Il englobe l’ensemble des pipelines de traitement, de l’entrée à la sortie. Cependant, il est possible que certains moteurs comme Kraken\footnote{ https://kraken.re/main/index.html} ou PyLaia\footnote{ https://github.com/jpuigcerver/PyLaia/wiki}, deux moteurs HTR open-source, intègrent plusieurs modèles de reconnaissance et des techniques spécifiques pour traiter divers types de manuscrits et d’écritures. Tandis que le modèle se réfère spécifiquement aux architectures et aux algorithmes qui sont utilisés au sein du moteur pour effectuer la reconnaissance du texte. Ces derniers sont des composants clefs du moteur. 
-	\\
-	
-	Revenons à la chaîne de traitement. Une fois les documents analysés et jugés éligibles pour le traitement HTR, ils doivent être récupérés à l'aide d'un client FTP, comme précédemment décrit pour l'OCR. Une fois les documents récupérés, le traitement est réalisé à l'aide d'une application intégrant le moteur HTR Kraken. Ce programme permet d'abord de sélectionner les documents à traiter, puis de choisir le modèle HTR approprié. 
 	
 	Une fois le traitement terminé, l'application génère un dossier de sortie contenant un fichier XML au format ALTO. Ces fichiers ALTO \footnote{Cf. Annexes, Figure \ref{fig:altoxml}} sont précieux pour évaluer l'efficacité des modèles HTR sur une grande quantité de documents. Pour cela, les fichiers ALTO sont soumis à une application nommée « exploAlto » (eA), qui permet de réaliser une vérité de terrain (Ground Truth).
 	
