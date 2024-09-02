@@ -31,6 +31,7 @@
 \usepackage{tabularx}% Package pour créer des tableaux à largeur fixe avec colonnes ajustables
 \usepackage{graphicx} % Package pour inclure des images avec options avancées de redimensionnement et rotation
 \usepackage{float} % Package permettant de forcer le placement exact des flottants
+\usepackage{placeins} % Package pour forcer les flottants en attente à être placés avant de continuer 
 
 
 
@@ -159,12 +160,12 @@
 			\bigskip
 			
 			\begin{Huge}
-				\textbf{L'industrialisation de l'intelligence artificielle}\\
+				\textbf{Industrialisation de\\ l'intelligence artificielle}\\
 			\end{Huge}
 			\bigskip
 			\bigskip
 			\begin{LARGE}
-				\textbf{Déploiement d’un projet d’intelligence artificielle à grande échelle dans le domaine du patrimoine}\\
+				\textbf{Déploiement d’un projet d’intelligence artificielle à grande échelle dans un établissement patrimonial}\\
 			\end{LARGE}
 			
 			\bigskip
@@ -850,9 +851,9 @@ efficace et fidèle des documents.
 	Revenons à la chaîne de traitement. Une fois les documents analysés et jugés éligibles pour le traitement HTR, ils doivent être récupérés à l'aide d'un client FTP, comme précédemment décrit pour l'OCR. Une fois les documents récupérés, le traitement est réalisé à l'aide d'une application intégrant le moteur HTR Kraken. Ce programme permet d'abord de sélectionner les documents à traiter, puis de choisir le modèle HTR approprié. 
 	\\
 	
-	\begin{figure}[h!]
+	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.8\textwidth]{images/app_htr_proc.png}
+		\includegraphics[width=0.7\textwidth]{images/app_htr_proc.png}
 		\caption{Interface graphique du processus HTR via une application développée durant le stage.}
 		\label{fig:monimage}
 	\end{figure}
@@ -1118,6 +1119,7 @@ efficace et fidèle des documents.
 \appendix %Des appendices: tables figures, etc
 \chapter{Figures.}
 Ces présents documents servent à appuyer et illustrer les propos présents dans ce mémoire afin de faciliter la compréhension des exemples ou des affirmations.
+\newpage
 
 \begin{figure}
 	\centering
