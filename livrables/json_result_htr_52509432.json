@@ -1,0 +1,32 @@
+{
+   "ATR model": "ManuMcFondue.mlmodel",
+   "alto infos": {
+      "T0000006": {
+         "master width": 2585,
+         "master height": 3568,
+         "low str average height": 95.59,
+         "average WC": 0.97
+      },
+      "T0000007": {
+         "master width": 2596,
+         "master height": 3568,
+         "low str average height": 96.17,
+         "average WC": 0.98
+      }
+   },
+   "lines infos": {
+      "lines": 43,
+      "corrected lines": 41,
+      "corrected lines CER": 0.08
+   },
+   "db infos": [
+      "fre",
+      "1601",
+      "Num\u00e9risation effectu\u00e9e \u00e0 partir d'un document original",
+      "null",
+      "null",
+      "Paroisse cath\u00e9drale Notre-Dame de Paris (0)",
+      "null"
+   ],
+   "url Gallica": "https://gallica.bnf.fr/ark:/12148/btv1b525094323"
+}

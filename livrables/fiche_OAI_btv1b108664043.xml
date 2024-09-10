@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results ResultsGenerationSearchTime="0:00:00.002" countResults="1" resultType="CVOAIRecordSearchService" searchTime="">
+<visibility_rights>all</visibility_rights>
+<notice>
+<record>
+<header>
+<identifier>oai:bnf.fr:gallica/ark:/12148/btv1b108664043</identifier>
+<datestamp>2023-02-21</datestamp>
+<setSpec>gallica:typedoc:manuscrits</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:identifier>https://gallicaintramuros.bnf.fr/ark:/12148/btv1b108664043</dc:identifier>
+<dc:title>Evangelia</dc:title>
+<dc:relation>Notice du catalogue : http://archivesetmanuscrits.bnf.fr/ark:/12148/cc605168</dc:relation>
+<dc:description>Numérisation effectuée à partir d'un document de substitution : R 29196.</dc:description>
+<dc:description>f. 1r-10r : Capitulare evangeliorum pour la messe, temporal et sanctoral mêlés (Cf. Klauser, Röm. Capit. Evang., I, LX, 1).Matthaeusf. 10v-11v : Prologus [Stegmüller, Rep. Biblicum, n° 595].f. 12r : Prologus [Stegmüller, Rep. Biblicum, n° 601].f. 12r-13v : Prologus [Stegmüller, Rep. Biblicum, n° 596].f. 14r-14v : Prologus [Stegmüller, Rep. Biblicum, n° 581].f. 14v-15r : Prologus [Stegmüller, Rep. Biblicum, n° 590].f. 15r-16v : Capitula, mutilés à la fin (inc. Nativitas Christi. Magi cum muneribus veniunt et Joseph ab angelo ; expl. et de Barabba latrone [de Bruyne, Sommaires, p. 270-280 A].f. 17-18 : blancs, en papier.f. 20r-62r : Evangelium Matthaei, mutilé au début (Mt 1,14-fin).Marcusf. 62v-63r : Prologus [Stegmüller, Rep. Biblicum, n° 607].f. 63r-63v : Capitula, mutilé à la fin (expl. Petrus confitetur ipsum esse Christum et ei) [de Bruyne, Sommaires, p. 283-284 A].f. 64-66 : blancs, en papier.f. 67r-96r : Evangelium Marci, mutilé au début (Mc 1,14-fin).Lucasf. 96r-99v : Capitula [de Bruyne, Sommaires, p. 257-263 I].f. 99v-100r : Prologus [Stegmüller, Rep. Biblicum, n° 620].f. 100v : blanc.f. 101-102 : blancs, en papier.f. 103r-108v : Evangelium Lucae, mutilé au début (Lc 1,15-4,4).f. 109-110 : blancs, en papier.f. 110bis et 110ter : il ne reste plus que des talons.f. 111r-151r : Evangelium Lucae (Lc 5,25-fin).Iohannesf. 151v-152r : Prologus [Stegmüller, Rep. Biblicum, n° 624].f. 152r-152v : Capitula [De Bruyne, Sommaires, p. 302-310 B=A].f. 153-155 : blancs, en papier.f. 156r-191r : Evangelium Iohannis, mutilé au début (Io 1,41-fin).f. 191v : blanc.La série des péricopes du capitulare est un mélange des types 2 et 3 (Lenker, Die Westsächsische Evangelienversion, p. 425).</dc:description>
+<dc:format>Angleterre (Winchester ?). - Écriture minuscule caroline de la seconde moitié du Xe siècle. - Rubriques en capitales rustiques à l'encre rouge. La chute des feuillets en correspondance avec le début de chaque évangile laisse supposer la présence originaire de pages enluminées ou d’initiales décorées. Une languette de parchemin entre les f. 18 et 19 porte les restes d’un encadrement de couleurs dans le style de Winchester. - En marge, renvois aux synoptiques. - Parchemin. - III + 191 + II ff. - 305 × 235 mm (justif. 207 x 152 mm). - 25 cahiers, presque tous quaternions, sauf les cahiers 16 (un ternion) et 25 (un quaternion manquant du dernier feuillet). Plusieurs feuillets manquants ont été remplacés par des feuillets blancs en papier (f. 17-18, 64-66, 101-102, 109-110, 153-155), probablement au moment de la reliure. Des f. 110bis et 110ter il ne reste plus que des talons où on lit quelques débuts de ligne : dans le même cahier 14, l’ordre des feuillets est troublé et le quaternion doit être reconstruit de la manière suivante : 110bis 110ter 112 111 | 114 113 115 116.1-138 (f. 1-104), 146 (f. 105-110), 158 (f. 110bis-116, avec 110bis et 100ter dont il ne reste que des talons), 166 (f. 117-122), 17-248 (f. 123-184), 257(8-1) (f. 185-191). Foliotation précédente en chiffres romains relative à l’évangile de Luc, partiellement rognée, successive à la chute des f. 101-102 et 109-110 et précédente à la chute des f. 110bis et 110ter et au déplacement des f. 112-114 : V-VII (f. 106-108), XI (f. 111) f. X (f. 112), XVI-L (f. 118-151). Signature des bifeuillets ajoutée (XVIIe siècle ?), de A à Bb, inscrite également sur les feuillets en papier ajoutés. - Réglure à la pointe sèche sur le côté poil : double justification limitée au cadre d’écriture, une ligne marginale verticale sur la marge externe, rectrices majeures (Muzerelle 2-21:J/0/1-1/J) ; 23 longues lignes. - Reliure du XVIIe siècle en veau fauve aux armes de Bigot ; dos à 5 doubles nerfs ; titre au dos en lettres dorées, « Novum Testamentum M. S. ». Tranche rouge. Sur la contregarde supérieure, armes gravées de Jean Bigot, et la cote « A 24 ». Contregarde supérieure en papier, inférieure en parchemin ; gardes en papier. - Au f. 1r et 191v, estampille de la « Bibiliotheca Regia », identique au modèle Josserand-Bruno type A, n° 1 (XVIIe-XVIIIe s.)</dc:format>
+<dc:description>Lieu de copie : Angleterre (Winchester ?).</dc:description>
+<dc:source>Bibliothèque nationale de France. Département des Manuscrits. Latin 272</dc:source>
+<dc:rights xml:lang="fre">domaine public</dc:rights>
+<dc:rights xml:lang="eng">public domain</dc:rights>
+<dc:date>0951-1000</dc:date>
+<dc:language>lat</dc:language>
+<dc:type xml:lang="eng">manuscript</dc:type>
+<dc:type xml:lang="fre">manuscrit</dc:type>
+<dc:contributor>Abbaye de la Sainte-Trinité de Fécamp. Ancien possesseur</dc:contributor>
+<dc:contributor>Antonius. Copiste</dc:contributor>
+<dc:contributor>Bigot, Jean (1588-1645). Ancien possesseur</dc:contributor>
+</oai_dc:dc>
+</metadata>
+</record>
+</notice>
+<provenance>bnf.fr</provenance>
+<source>Bibliothèque nationale de France. Département des Manuscrits. Latin 272</source>
+<typedoc>manuscrit</typedoc>
+<nqamoyen>0.0</nqamoyen>
+<title>Evangelia</title>
+<date nbIssue="1">0951-1000</date>
+<first_indexation_date>15/01/2023</first_indexation_date>
+<streamable>false</streamable>
+<listBibVirt>
+<label>gallica</label>
+</listBibVirt>
+</results>

@@ -1,0 +1,32 @@
+{
+   "ATR model": "ManuMcFrenchV3.mlmodel",
+   "alto infos": {
+      "T0000008": {
+         "master width": 4594,
+         "master height": 6712,
+         "low str average height": 166.15,
+         "average WC": 0.98
+      },
+      "T0000009": {
+         "master width": 4572,
+         "master height": 6670,
+         "low str average height": 159.48,
+         "average WC": 0.98
+      }
+   },
+   "lines infos": {
+      "lines": 40,
+      "corrected lines": 39,
+      "corrected lines CER": 0.04
+   },
+   "db infos": [
+      "fre",
+      "1601",
+      "Num\u00e9risation effectu\u00e9e \u00e0 partir d'un document original",
+      "null",
+      "null",
+      "null",
+      "null"
+   ],
+   "url Gallica": "https://gallica.bnf.fr/ark:/12148/btv1b84701789"
+}

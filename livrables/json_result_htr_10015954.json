@@ -1,0 +1,32 @@
+{
+   "ATR model": "ManuMcFondue.mlmodel",
+   "alto infos": {
+      "T0000002": {
+         "master width": 2456,
+         "master height": 3533,
+         "low str average height": 92.12,
+         "average WC": 0.9
+      },
+      "T0000003": {
+         "master width": 2376,
+         "master height": 3497,
+         "low str average height": 92.83,
+         "average WC": 0.95
+      }
+   },
+   "lines infos": {
+      "lines": 54,
+      "corrected lines": 20,
+      "corrected lines CER": 0.3
+   },
+   "db infos": [
+      "fre",
+      "1609",
+      "Num\u00e9risation effectu\u00e9e \u00e0 partir d'un document original",
+      "null",
+      "null",
+      "Rov\u00e9ri\u00e9 de Cabri\u00e8res, Fran\u00e7ois-Marie-Anatole de  (0)",
+      "null"
+   ],
+   "url Gallica": "https://gallica.bnf.fr/ark:/12148/btv1b10015954z"
+}
